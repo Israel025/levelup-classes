@@ -1,4 +1,6 @@
-# Objects
+# Assignment 1
+
+## Objects
 
 1. What is an object.
 2. Pick any item and make a javascript object.
@@ -17,7 +19,7 @@ const foo = {
 4. How many ways can we access the properties of an object. Give examples.
 
 
-# Prototype
+## Prototype
 
 1. Create a prototype for a calculator and give it the following functionality:
     * Addition
@@ -29,7 +31,7 @@ const foo = {
 
 3. What is the difference between a constructor and a method/function
 
-# Callbacks
+## Callbacks
 
 1. Why do we need callbacks. Give a real life example of when its needed.
 

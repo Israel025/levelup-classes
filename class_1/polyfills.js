@@ -2,11 +2,14 @@
 
 // Adition, Subtraction and Multiplication
 
-const myPolyfill = function () {}
-myPolyfill.prototype.addition = function (value1, value2) {
+const MyPolyfill = function () {
+    this.printNumber = num => console.log(num)
+}
+MyPolyfill.prototype.addition = function (value1, value2) {
+    this.printNumber(2);
     return value1 + value2
 }
-myPolyfill.prototype.sumAll = function() {
+MyPolyfill.prototype.sumAll = function() {
     let sum = 0
     for(let i = 0; i < arguments.length; i++){
         //console.log(arguments[i])
@@ -14,8 +17,12 @@ myPolyfill.prototype.sumAll = function() {
     }
     return sum
 }
+const polyInstance = new MyPolyfill();
+//polyInstance.printNumber(2);
 
-const polyInstance = new myPolyfill()
+const T = MyPolyfill
+
+
 //console.log(polyInstance.addition(1,2));
 //console.log(polyInstance.sumAll(1,2,3,4))
 /* const myCar = function (wheels, body) {

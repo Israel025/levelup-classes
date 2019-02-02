@@ -9,14 +9,16 @@
 <body>
     
     <script>
-        const xhr = new XMLHttpRequest()
+        const xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState === 4) {
-                xhr.status === 200 ? console.log(xhr.responseText) : console.error('error')
+                xhr.status === 200 ? 
+                console.log(xhr.responseText) : 
+                console.error('error')
             }
         }
-        xhr.open('GET', 'https://swapi.co/api/people/1')
-        xhr.send() 
+        xhr.open('GET', 'https://swapi.co/api/people/1');
+        xhr.send(); 
     </script>
 </body>
 </html>

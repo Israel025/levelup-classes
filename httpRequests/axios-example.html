@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+</head>
+<body>
+    
+    <h1 id="content">...Loading</h1>
+    <button id="fetch-info">Fetch Information</button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="application/javascript">
+        (function(){
+            document.getElementById("fetch-info")
+                        .addEventListener("click", function (){
+
+                axios.get('https://swapi.co/api/people/1')
+                .then(function (result){
+                    var name = result.data.name
+                    document.getElementById("content").innerHTML = name
+                })
+                .catch(function(error){
+                    console.error(error)
+                })
+                
+            })
+        })()
+    </script>
+</body>
+</html>

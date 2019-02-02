@@ -8,12 +8,12 @@
 
 ```javascript
 const foo = {
-    color : "red",
-    getColor : function(){
-      //make this function return foo.color
-      //without using the word: "foo"
-    }
+  color : "red",
+  getColor : function(){
+    //make this function return foo.color
+    //without using the word: "foo"
   }
+}
 ```
 
 4. How many ways can we access the properties of an object. Give examples.
